@@ -5,7 +5,8 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
   env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'http://localhost:44845';
 
 const context =  [
-  "/weatherforecast",
+    "/weatherforecast",
+    "/item" // tells our client side code about our server side item controller
 ];
 
 module.exports = function(app) {
